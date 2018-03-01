@@ -131,10 +131,10 @@ def parse_args():
   parser = ArgumentParser()
   parser.add_argument('--host', type=str, default='localhost',
                       help='specify a host to operate on (default: localhost)')
-  parser.add_argument('', type=int, default=9001,
+  parser.add_argument('integers', type=int, default=9001,
                       help='specify a port to operate on (default: 9001)')
   args = parser.parse_args()
-  return (args.host, args.port)
+  return (args.host, args.integers)
 
 
 if __name__ == '__main__':
